@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<style>
+.mySlides {display:none;}
+.text {
+  color: red;
+  font-size: 75px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+</style>
+</head>
+<body>
+
+<h2 id="header-background">CATALOGUL COLEGILOR</h2>
+</h2>
+
+<ol>
+  <li><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/Fisa%20de%20lucr%20Lab5.html">Adrian-Florin Negoita</a></li>
+  <li><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/lab5%20stefan%20razvan%20dumitru.html">Stefan Razvan Dumitru</a></li>
+  <li><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/informatica%20aplicata%20lab%205%20exercitiul%202.html">Anamaria Scheau</a></li>
+</ol> 
+<img src="logoutcn.jpg" alt="UTCN" width="500" height="333">
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="IMG_3607.jpg" style="width:100%">
+  <div class="text"><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/informatica%20aplicata%20lab%205%20exercitiul%202.html">Anamaria Scheau</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="IMG_4364.jpg" style="width:100%">
+  <div class="text"><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/lab5%20stefan%20razvan%20dumitru.html">Stefan Razvan Dumitru</div>
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="Poza-page-001.jpg" style="width:100%">
+  <div class="text"><a href="file:///C:/Users/mariu/Documents/Witcher%202/Fisa%20de%20lucru_Lab5_MariusMuntean_IA/Exercitiul%203/Laboratorul%207/Fisa%20de%20lucr%20Lab5.html">Adrian-Florin Negoita</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); 
+}
+</script>
+
+</body>
+</html>

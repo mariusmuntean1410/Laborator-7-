@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: darkblue;
+  margin-left: 40px;
+  }
+ p {
+color:purple;
+background-color:lightgray;
+font-family: Impact, Charcoal, sans-serif;
+}
+ 
+img {
+ border: 5px solid #555;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+p.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+</style>
+<script>
+function cariera() 
+{
+document.getElementById("nume").innerHTML = "Ing.Muntean Marius-Lucian";
+document.getElementById("experienta").innerHTML = "Prieteni noi";
+document.getElementById("experienta1").innerHTML ="Multe cunostinte";
+document.getElementById("experienta2").innerHTML ="Dezvoltare personala";
+document.getElementById("experienta3").innerHTML ="Dezvoltare profesionala";
+document.getElementById("idealuri").innerHTML ="Idealuri pe timpul facultatii:";
+document.getElementById('myImage').src="poza1.jpeg";
+document.getElementById("realizare").innerHTML = "Intership";
+document.getElementById("realizare1").innerHTML ="Teamwork";
+document.getElementById("realizare2").innerHTML ="Management";
+document.getElementById("realizare3").innerHTML ="Realizari:";
+document.getElementById('myImage').style.opacity="0.6";
+document.getElementById('myImage').style.border="7px";
+document.body.style.background = "darksalmon";
+document.getElementById("realizare3").style.fontFamily = "Lucida Console, Courier, monospace";
+document.getElementById("idealuri").style.fontFamily = "Lucida Console, Courier, monospace";
+document.getElementById("email").style.fontFamily = "Lucida Console, Courier, monospace";
+
+}
+function varsta()
+{
+  var azi=new Date;
+  var VarstaMea;
+
+  var nasc=document.getElementById('varsta').innerHTML;
+  var curent=azi.getFullYear();
+
+  VarstaMea=curent-parseInt(nasc);
+  document.getElementById("varsta").innerHTML=VarstaMea;
+
+}
+</script>
+
+<h1 id="nume" class="monospace""impact">
+Muntean Marius-Lucian</h1>
+<p onmouseover="varsta()" id="varsta"> 2001 </p>
+<p id="email">marius.muntean1410@gmail.com</p>
+<img id="myImage" src="poza.jpeg" alt="" width="400" height="350">
+<p id="realizare3">Discipline:</p>
+
+<p id="realizare"><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">1.Componente si circuite pasive </a></p>
+<p id="realizare1"><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf">2.Informatica aplicata </a></p>
+<p id="realizare2"><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">3.Programarea calculatoarelor </a></p>
+
+<p id="idealuri">Hobby-urile mele sunt:</p>
+<p id="experienta">-Fotbalul</p>
+<p id="experienta1">-Muzica</p>
+<p id="experienta2">-Drumetiile</p>
+<p id="experienta3">-Gaming</p>
+
+<button type="button" onclick="cariera()">Alta viata!</button>
+</body>
+</html>
